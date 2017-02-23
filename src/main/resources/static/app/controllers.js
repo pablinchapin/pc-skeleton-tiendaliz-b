@@ -21,12 +21,16 @@ app.controller('AppController', [
             $scope.newItem = "";
         };
         
-        function updateItem(){
+        function updateItem(item){
             console.log("update");
+            item.$update();
         };
         
-        function deleteItem(){
+        function deleteItem(item){
             console.log("delete");
+            item.$remove(function(){
+               $scope.items.splice($scope.items.indexOf(item), 1);
+            });
         }
         
     }

@@ -4,7 +4,7 @@ angular.module('appService', [
 .factory('Item', [
     '$resource',
     function($resource){
-        return $resource('http://localhost:8080/items',
+        return $resource('http://localhost:8080/items/:id',
         {id: '@id'},
         {
             update: {

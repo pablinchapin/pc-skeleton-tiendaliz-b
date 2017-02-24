@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>TODO supply a title</title>
+        <title>TODO lista de tareas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./bower_components/bootstrap-css-only/css/bootstrap.min.css" />
@@ -9,11 +9,11 @@
     <body ng-app="app">
         <div class="container" ng-controller="AppController">
             <div class="page-header">
-                <h1>A checklist</h1>
+                <h1>Tareas por dia</h1>
             </div>
             
             <div class="alert alert-info" role="alert" ng-hide="items && items.length > 0">
-                There are no items yet
+                Aun no hay tareas
             </div>
             
             <form class="form-horizontal" role="form" ng-submit="addItem(newItem)">
